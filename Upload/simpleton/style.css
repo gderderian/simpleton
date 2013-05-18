@@ -1,0 +1,1211 @@
+/*
+
+Theme Name: Simpleton
+Theme URI: http://www.nextgenwebmedia.com
+Version: 1.0
+Description: An elegant yet suprisingly simple personal Wordpress blog theme.
+Author: Grant Derderian/NextGen Web Media
+Author URI: http://www.nextgenwebmedia.com
+
+*/
+
+/* CSS Reset from MeyerWeb.com */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit; 
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+/* Styling For The Header, Search, Logo, Subscribe Buttons and Navigation */
+
+A:link {text-decoration: none; color: #03437A;}
+A:visited {text-decoration: none; color: #03437A;}
+A:active {text-decoration: none;}
+A:hover {text-decoration: none; color: #003C68;}
+
+body {
+
+background-color: white;
+font-family: Arial, Helvetica, georgia;
+background-color: #F6FBFF;
+
+}
+
+#pagewrapper {
+
+margin-left: auto;
+margin-right: auto;
+width: 1000px;
+
+}
+
+#header {
+
+position: relative;
+height: 130px;
+
+}
+
+#header li {
+
+font-size: 16px;
+list-style-type: none;
+float: left;
+display: block;
+position: relative;
+line-height: 10px;
+padding: 10px 12px 13px 12px;
+
+}
+
+#logo {
+
+padding-top: 7px;
+padding-left: 5px;
+width: 297px;
+
+}
+
+#search {
+
+position: absolute;
+right: 5px;
+top: 70px;
+
+}
+
+#subscribe {
+position: absolute;
+right: 5px;
+top: 5px;
+
+}
+
+#fbtip {
+
+position: relative;
+float: right;
+
+}
+
+#twittip {
+
+position: relative;
+float: right;
+
+}
+
+#rsstip {
+
+position: relative;
+float: right;
+
+}
+
+#topnavi {
+
+height: 30px;
+background-color: #c0e1ff;
+border-top: 2px solid #003C79;
+border-bottom: 2px solid #003C79;
+position: relative;
+
+}
+
+ul#nav {
+
+color:#FFFFFF;
+list-style:none outside none;
+margin:0;
+padding:0;
+
+}
+
+ul#nav li {
+
+border-right: 2px solid #003C68;
+float: left;
+padding: 11px 15px;
+
+}
+
+#postsidebar {
+
+padding-top: 15px;
+padding-bottom: 30px;
+width: 1000px;
+
+}
+
+/* Place The Post Display on The Left and Sidebar On The Right */
+
+#leftposts {
+
+float: left;
+width: 705px;
+background: #FFFFFF;
+border: 2px solid #EEEEEE;
+position: relative;
+
+}
+
+#rightsidebar {
+
+position: relative;
+float: right;
+width: 285px;
+padding-left: 0px;
+
+}
+
+/* Now onto the individual home page post styles */
+
+#post {
+
+padding-top: 30px;
+padding-bottom: 25px;
+padding-left: 25px;
+padding-right: 70px;
+border-bottom: 1px solid #EEEEEE;
+float: left;
+vertical-align: baseline;
+
+}
+
+#leftthumb {
+
+float: left;
+width: 165px;
+padding-right: 40px;
+
+}
+
+#rightpostdata {
+
+float: right;
+width: 405px;
+
+}
+
+
+#post-quote {
+
+padding: 40px 36px;
+border-bottom: 1px solid #000000;
+float: left;
+vertical-align: baseline;
+background-color: #FBC116;
+
+}
+
+#postcategory {
+
+float: left;
+position: relative;
+padding-bottom: 5px;
+font-size: 11px;
+
+}
+
+#posttitle {
+
+float: left;
+font-size: 36px;
+font-weight: bold;
+padding-bottom: 5px;
+position: relative;
+width: 100%;
+line-height: 30px;
+color: #3B3B3B;
+
+}
+
+#postmeta {
+
+float: left;
+padding-top: 3px;
+padding-bottom: 10px;
+position: relative;
+font-size: 14px;
+width: 100%;
+
+}
+
+#postcontent {
+
+float: left;
+position: relative;
+line-height: 18px;
+font-size: 14px;
+color: #5C5852;
+
+}
+
+.more-link {
+
+float: right;
+font-size: 14px;
+font-weight: bold;
+
+}
+
+#leftthumb img {
+
+padding: 2px;
+border: 1px solid #CCC;
+
+}
+
+/* Style The Share Buttons */
+
+#bottomposttools {
+
+position: relative;
+float: left;
+width: 705px;
+margin-top: 20px;
+border: 1px solid #EEEEEE;
+background: #FFFFFF;
+
+}
+
+
+#sharepost {
+
+position: relative;
+float: left;
+width: 200px;
+font-size: 12px;
+padding: 15px;
+
+}
+
+#sharepost-title {
+
+font-size: 18px;
+
+}
+
+#sharingicons {
+
+padding-top: 5px;
+
+}
+
+#sharingicons li {
+
+position: relative;
+float: left;
+display: inline;
+padding-right: 3px;
+
+}
+
+#followustext {
+
+float: left;
+position: relative;
+padding-top: 5px;
+padding-bottom: 2px;
+width: 300px;
+font-size: 15px;
+
+}
+
+#connectwithusicons {
+
+float: left;
+position: relative;
+
+}
+
+#connectwithusicons li {
+
+position: relative;
+float: left;
+display: inline;
+padding-right: 3px;
+
+}
+
+#shorturltitle {
+
+float: left;
+position: relative;
+padding-top: 5px;
+padding-bottom: 3px;
+width: 300px;
+font-size: 15px;
+
+}
+
+#bitlypostlink {
+
+border: 1px solid #EEEEEE;
+background-color: #F6FBFF;
+width: 200px;
+
+}
+
+/* Style the about author box at the bottom of the posts */
+
+#postfooterright {
+
+position: relative;
+float: right;
+width: 470px;
+border-left: 1px solid #EEEEEE;
+
+}
+
+#aboutauthorbox {
+
+position: relative;
+float: right;
+width: 440px;
+padding: 15px;
+line-height: 18px;
+border-bottom: 1px solid #EEEEEE;
+
+}
+
+#authorinfo-moreabout {
+
+padding-bottom: 7px;
+
+}
+
+#authorinfo-photo {
+
+float: left;
+position: relative;
+border: 1px solid #CCC;
+padding: 2px;
+margin-right: 7px;
+
+}
+
+#authorinfo-desc {
+
+font-size: 13px;
+padding-left: 5px;
+
+}
+
+
+/* Style The Tags Area of The Footer */
+
+#tags {
+
+position: relative;
+float: left;
+padding-left: 15px;
+padding-right: 15px;
+margin-top: 10px;
+padding-bottom: 10px;
+width: 440px;
+
+}
+
+#tagtitle {
+
+float: left;
+position: relative;
+padding-right: 3px;
+
+}
+
+#taglist {
+
+position: relative;
+float: left;
+
+}
+
+#taglist a {
+
+font-size: 14px;
+background-color: #E8E8E8;
+-moz-border-radius: 3px;
+padding: 5px;
+margin: 4px;
+line-height: 30px;
+
+}
+
+/* Style The Sidebars */
+
+.rightsidebarwidget {
+
+position: relative;
+background-color: #FFFFFF;
+border: 2px solid #EEEEEE;
+margin-bottom: 15px;
+vertical-align: baseline;
+float: left;
+width: 100%;
+
+}
+
+.rightsidebartitle {
+
+border-top: 1px solid #EAEAEA;
+border-bottom: 3px solid #EAEAEA;
+border-left: 1px solid #EAEAEA;
+border-right: 1px solid #EAEAEA;
+color: #4C4C4C;
+font-size: 16px;
+padding: 8px 0;
+text-align: center;
+
+}
+
+.textwidget {
+
+padding: 10px;
+font-size: 14px;
+
+}
+
+.rightsidebarwidget ul {
+
+padding: 10px;
+list-style-image: url(images/bullet.png);
+margin-left: 10px;
+
+}
+
+.rightsidebarwidget ul li {
+
+padding-bottom: 3px;
+
+
+}
+.rightsidebarwidget ul li:hover {
+
+color: #595959;
+background-color: #EFEFEF;
+
+}
+
+#lowerleftwidget ul {
+
+list-style-image:url("images/bullet.png");
+margin-left:10px;
+padding:10px;
+
+}
+
+#lowermiddlewidget ul {
+
+list-style-image:url("images/bullet.png");
+margin-left:10px;
+padding:10px;
+
+}
+
+#lowerrightwidget ul {
+
+list-style-image:url("images/bullet.png");
+margin-left:10px;
+padding:10px;
+
+}
+
+.lowermiddletitle {
+
+border-color:#EAEAEA;
+border-style:solid;
+border-width:1px 1px 3px;
+color:#4C4C4C;
+font-size:16px;
+padding:8px 0;
+text-align:center;
+
+}
+
+.lowerrighttitle {
+
+border-color:#EAEAEA;
+border-style:solid;
+border-width:1px 1px 3px;
+color:#4C4C4C;
+font-size:16px;
+padding:8px 0;
+text-align:center;
+
+}
+
+#searchform {
+
+text-align: center;
+
+}
+
+#s {
+
+background:none repeat scroll 0 0 #F6FBFF;
+border:2px solid #c8c8c8;
+font-family:Arial,Helvetica,georgia;
+font-size:14px;
+
+}
+
+
+.rightsidebarwidget #searchform {
+
+padding: 10px;
+
+}
+
+.lowerleftwidget #searchform {
+
+padding: 10px;
+
+}
+
+.lowermiddlewidget #searchform {
+
+padding: 10px;
+
+}
+
+.lowerrightwidget #searchform {
+
+padding: 10px;
+
+}
+
+.rightsidebarwidget #searchform #searchsubmit {
+
+padding-top: 3px;
+
+}
+
+/* Style For The Comments */
+
+
+#comments {
+
+float: left;
+width: 620px;
+margin-top: 40px;
+
+}
+
+#commentnumber {
+
+float: left;
+width: 180px;
+background-color: #C0E1FF;
+border-radius: 4px;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-bottom:2px solid #003C79;
+border-top:2px solid #003C79;
+width: 705px;
+line-height: 10px;
+
+}
+
+#number {
+
+padding: 8px;
+text-align: center;
+
+}
+
+#commentlist {
+
+float: left;
+
+}
+
+#commenteravatar {
+
+float: left;
+width: 90px;
+font-size: 14px;
+
+}
+
+#commentbody {
+
+float: right;
+width: 560px;
+padding-top: 10px;
+padding-right: 10px;
+padding-bottom: 10px;
+font-size: 14px;
+
+}
+
+#commentmeta {
+
+float: left;
+font-size: 14px;
+font-size: 12px;
+padding-top: 5px;
+
+}
+
+#indivcommentbox {
+
+width: 705px;
+
+}
+
+#indivcomment {
+
+float: right;
+position: relative;
+margin-top: 10px;
+margin-bottom: 20px;
+background-color: #F2F2F2;
+border-top: 2px solid #B0B0B0;
+border-bottom: 1px solid #B0B0B0;
+
+}
+
+#commentsreplylink {
+
+position: relative;
+float: right;
+padding-right: 10px;
+padding-bottom: 5px;
+padding-top: 5px;
+font-size: 12px;
+font-style: italic;
+
+}
+
+#commentername {
+
+font-size: 15px;
+padding-bottom: 2px;
+
+}
+
+
+#rightmeta {
+
+float: left;
+width: 105px;
+padding-top: 10px;
+padding-left: 10px;
+padding-bottom: 10px;
+
+}
+
+#respond {
+
+float: left;
+position: relative;
+
+}
+
+#commentformbody {
+
+width: 705px;
+position: relative;
+float: left;
+
+}
+
+#leavereplymessage {
+
+-moz-border-radius: 4px 4px 4px 4px;
+background-color: #C0E1FF;
+border-bottom: 2px solid #003C79;
+border-top: 2px solid #003C79;
+width: 690px;
+padding: 8px;
+position: relative;
+text-align: center;
+
+}
+
+#commentform {
+
+padding-top: 10px;
+
+}
+
+#commentreply-name #author {
+
+background: url("images/commenticons/name.png") no-repeat scroll 7px 7px;
+width: 230px;
+height: 30px;
+padding-left: 30px;
+border: 1px solid #EEEEEE;
+margin-right: 5px;
+
+}
+
+#commentreply-name {
+
+float: left;
+
+}
+
+#commentreply-email #email {
+
+background: url("images/commenticons/email.png") no-repeat scroll 7px 7px;
+width: 230px;
+height: 30px;
+padding-left: 30px;
+border: 1px solid #EEEEEE;
+margin-right: 5px;
+
+}
+
+#commentreply-email {
+
+float: left;
+
+}
+
+#commentreply-url #url {
+
+background: url("images/commenticons/websiteurl.png") no-repeat scroll 7px 7px;
+width: 230px;
+height: 30px;
+padding-left: 30px;
+border: 1px solid #EEEEEE;
+margin-right: 5px;
+
+}
+
+#commentreply-url {
+
+float: left;
+
+}
+
+#commentreply-commentbody #comment {
+
+width: 700px;
+height: 90px;
+margin-top: 15px;
+padding: 5px;
+border: 2px solid #EEEEEE;
+background: #F6FBFF;
+font-family: Arial,Helvetica,georgia;
+font-size: 14px;
+
+}
+
+#commentform #submit {
+
+padding-top: 10px;
+
+
+}
+
+#commentform #submit #submit {
+
+background-image: -moz-linear-gradient(center top , #5086F1, #5086D2);
+padding: 4px;
+color: white;
+border: 1px solid white;
+-moz-border-radius: 4px 4px 4px 4px;
+font-size: 12px;
+text-transform: uppercase;
+
+}
+
+#comments-loggedinas {
+
+font-size: 13px;
+
+}
+
+#comments-awaitingmoderation {
+
+position: relative;
+float: left;
+padding-top: 2px;
+font-size: 10px;
+font-weight: bold;
+font-style: italic;
+
+}
+
+#commentpagenavi {
+
+position: relative;
+float: left;
+padding-bottom: 10px;
+
+}
+
+#prevcomments {
+
+float: left;
+position: relative;
+padding-bottom: 5px;
+-moz-border-radius: 4px 4px 4px 4px;
+background-image: -moz-linear-gradient(center top , #5086F1, #5086D2);
+border: 1px solid white;
+color: #FFFFFF;
+font-size: 12px;
+padding: 4px;
+text-transform: uppercase;
+
+}
+
+#nextcomments {
+
+float: right;
+position: relative;
+padding-bottom: 5px;
+-moz-border-radius: 4px 4px 4px 4px;
+background-image: -moz-linear-gradient(center top , #5086F1, #5086D2);
+border: 1px solid white;
+color: #FFFFFF;
+font-size: 12px;
+padding: 4px;
+text-transform: uppercase;
+
+}
+
+
+/* Style the nested comments to the 3rd Level*/
+
+.children #indivcommentbox {
+
+position: relative;
+float: right;
+width: 600px;
+
+}
+
+.children #indivcommentbox #indivcomment #commentbody {
+
+width: 475px;
+
+}
+
+.children #indivcommentbox .children #indivcommentbox {
+
+position: relative;
+float: right;
+width: 400px;
+
+}
+
+.children #indivcommentbox .children #indivcomment #commentbody {
+
+width: 275px;
+
+}
+
+#commentreply-cancellink {
+
+font-size: 13px;
+padding-top: 5px;
+
+}
+
+/* Style Author Comments Differently for up to 3 levels down */
+
+.bypostauthor.depth-1 #indivcomment {
+
+background-color: #BFD6F0;
+
+}
+
+.depth-2 #indivcomment {
+
+background-color: #F2F2F2;
+
+}
+
+.bypostauthor.depth-1 .children .bypostauthor #indivcomment {
+
+background-color: #BFD6F0 !important;
+
+}
+
+.bypostauthor.depth-1 .children .bypostauthor.depth-2 .children .depth-3 #indivcomment {
+
+background-color: #F2F2F2 !important;
+
+}
+
+.bypostauthor.depth-1 .children .bypostauthor.depth-2 .children .bypostauthor.depth-3 #indivcomment {
+
+background-color: #BFD6F0 !important;
+
+}
+
+.depth-1 .children #indivcomment {
+
+background-color: #F2F2F2;
+
+}
+
+/* Style The Footer of The Theme */
+
+#footercontainer {
+
+margin-top: 20px;
+margin-bottom: 10px;
+background-color: #FFFFFF;
+border: 2px solid #EEEEEE;
+width: 1000px;
+position: relative;
+float: left;
+
+}
+
+#footerwidgetone {
+
+width: 332px;
+position: relative;
+float: left;
+border-right: 2px solid #EEEEEE;
+
+}
+
+#footerwidgettwo {
+
+width: 332px;
+position: relative;
+float: left;
+border-right: 2px solid #EEEEEE;
+
+}
+
+#footerwidgetthree {
+
+width: 332px;
+position: relative;
+float: right;
+
+}
+
+/* Style the author box in author.php */
+
+#authorbox {
+
+position: relative;
+float: left;
+background-color: #EEEEEE;
+padding: 20px;
+width: 665px;
+
+}
+
+#authorimg {
+
+float: left;
+position: relative;
+
+}
+
+#authordescription {
+
+float:left;
+padding-left:10px;
+position:relative;
+width: 550px;
+padding-top: 5px;
+font-size: 14px;
+
+}
+
+#authorlower {
+
+float:left;
+padding-left:10px;
+position:relative;
+width: 550px;
+padding-top: 5px;
+
+}
+
+#authorpostsby {
+
+float: left;
+position: relative;
+font-size: large;
+padding-left: 10px;
+
+}
+
+/* Footer Styling */
+
+#nowidgetsyet {
+
+padding: 15px;
+text-align: center;
+
+}
+
+#footertext {
+
+float: left;
+position: relative;
+padding-bottom: 15px;
+padding-top: 10px;
+color: #595959;
+font-size: 12px;
+
+}
+
+.lowerlefttitle {
+
+border-color:#EAEAEA;
+border-style:solid;
+border-width:1px 1px 3px;
+color:#4C4C4C;
+font-size:16px;
+padding:8px 0;
+text-align:center;
+
+}
+
+/* Style The WP Calendar Widget */
+
+#wp-calendar {
+
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+
+}
+
+#wp-calendar caption {
+
+color: #4C4C4C;
+font-weight: bold;
+text-align: center;
+
+}
+
+#wp-calendar thead tr th {
+
+padding-left: 2px;
+padding-right: 2px;
+
+}
+
+#wp-calendar tbody tr td {
+
+padding: 1px;
+
+}
+
+/* Style The WP 404.php Error Page */
+
+#fourofourtext {
+
+margin-left: auto;
+margin-right: auto;
+
+}
+
+#fourofourcontainer {
+
+padding: 25px;
+
+}
+
+/* Style Block Quotes and bulleted (unordered) lists in Posts and Pages */
+
+blockquote {
+
+background-color: #e6e6e6;
+margin: 15px;
+border-color: #a7a7a7;
+border-style: solid;
+font-style: italic;
+padding: 10px;
+
+}
+
+#postcontent ul {
+
+padding: 10px;
+list-style-image: url(images/bullet.png);
+margin-left: 10px;
+
+}
+
+/* Style Page Navigation */
+
+.wp-pagenavi {
+
+clear: both;
+float: left;
+padding: 10px;
+position: relative;
+
+}
+
+.wp-pagenavi a, .wp-pagenavi span {
+
+border: 1px solid #EAEAEA !important;
+margin: 2px;
+padding: 3px 5px;
+text-decoration: none;
+
+}
+
+.wp-pagenavi span.current {
+
+border: 1px solid #BFBFBF !important;
+
+}
+
+#catgtitle {
+
+float: left;
+position: relative;
+font-size: 25px;
+padding-left: 5px;
+
+}
