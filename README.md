@@ -1,0 +1,4 @@
+simpleton
+=========
+
+Simpleton WordPress theme.
